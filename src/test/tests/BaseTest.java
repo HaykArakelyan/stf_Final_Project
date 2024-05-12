@@ -37,8 +37,8 @@ public class BaseTest {
     @BeforeClass
     public void onStartUp(){
 //        TODO: Uncomment this line for visual testing and comment the next line!
-        driver = new ChromeDriver();
-//        driver = chromeDriver;
+//        driver = new ChromeDriver();
+        driver = chromeDriver;
         driver.manage().window().maximize();
         driver.get(BASE_URL);
         navigateToWebsite();
