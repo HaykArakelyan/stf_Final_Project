@@ -1,0 +1,40 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="TestSuite">
+    <parameter name="gridUrl" value="http://localhost:4444/wd/hub"/>
+
+    <test name="EdgeTests">
+        <parameter name="browser" value="edge"/>
+        <parameter name="gridUrl" value="http://localhost:4444/wd/hub"/>
+        <classes>
+            <class name="tests.BaseTest"/>
+            <class name="tests.AddUserTest"/>
+            <class name="tests.AdminTest"/>
+            <class name="tests.EditUserTest"/>
+            <class name="tests.AllPOMTests"/>
+        </classes>
+    </test>
+
+    <test name="ChromeTests">
+        <parameter name="browser" value="chrome"/>
+        <parameter name="gridUrl" value="http://localhost:4444/wd/hub"/>
+        <classes>
+            <class name="tests.BaseTest"/>
+            <class name="tests.AddUserTest"/>
+            <class name="tests.AdminTest"/>
+            <class name="tests.EditUserTest"/>
+            <class name="tests.AllPOMTests"/>
+        </classes>
+    </test>
+
+    <test name="FirefoxTests">
+        <parameter name="browser" value="firefox"/>
+        <parameter name="gridUrl" value="http://localhost:4444/wd/hub"/>
+        <classes>
+            <class name="tests.BaseTest"/>
+            <class name="tests.AddUserTest"/>
+            <class name="tests.AdminTest"/>
+            <class name="tests.EditUserTest"/>
+            <class name="tests.AllPOMTests"/>
+        </classes>
+    </test>
+</suite>
